@@ -1,0 +1,49 @@
+[2023-01-26T09:36:30.781+0100][gc] Using G1
+[2023-01-26T09:36:30.785+0100][gc,init] Version: 17.0.5+9-LTS-191 (release)
+[2023-01-26T09:36:30.785+0100][gc,init] CPUs: 8 total, 8 available
+[2023-01-26T09:36:30.785+0100][gc,init] Memory: 15782M
+[2023-01-26T09:36:30.785+0100][gc,init] Large Page Support: Disabled
+[2023-01-26T09:36:30.785+0100][gc,init] NUMA Support: Disabled
+[2023-01-26T09:36:30.785+0100][gc,init] Compressed Oops: Enabled (32-bit)
+[2023-01-26T09:36:30.785+0100][gc,init] Heap Region Size: 1M
+[2023-01-26T09:36:30.785+0100][gc,init] Heap Min Capacity: 512M
+[2023-01-26T09:36:30.785+0100][gc,init] Heap Initial Capacity: 512M
+[2023-01-26T09:36:30.785+0100][gc,init] Heap Max Capacity: 512M
+[2023-01-26T09:36:30.785+0100][gc,init] Pre-touch: Disabled
+[2023-01-26T09:36:30.785+0100][gc,init] Parallel Workers: 8
+[2023-01-26T09:36:30.785+0100][gc,init] Concurrent Workers: 2
+[2023-01-26T09:36:30.785+0100][gc,init] Concurrent Refinement Workers: 8
+[2023-01-26T09:36:30.785+0100][gc,init] Periodic GC: Disabled
+[2023-01-26T09:36:30.785+0100][gc,metaspace] CDS archive(s) mapped at: [0x0000000800000000-0x0000000800be3000-0x0000000800be3000), size 12464128, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 0.
+[2023-01-26T09:36:30.785+0100][gc,metaspace] Compressed class space mapped at: 0x0000000800c00000-0x0000000840c00000, reserved size: 1073741824
+[2023-01-26T09:36:30.785+0100][gc,metaspace] Narrow klass base: 0x0000000800000000, Narrow klass shift: 0, Narrow klass range: 0x100000000
+[2023-01-26T09:36:36.025+0100][gc,start    ] GC(0) Pause Young (Normal) (G1 Evacuation Pause)
+[2023-01-26T09:36:36.026+0100][gc,task     ] GC(0) Using 8 workers of 8 for evacuation
+[2023-01-26T09:36:36.029+0100][gc,phases   ] GC(0)   Pre Evacuate Collection Set: 0,1ms
+[2023-01-26T09:36:36.029+0100][gc,phases   ] GC(0)   Merge Heap Roots: 0,0ms
+[2023-01-26T09:36:36.029+0100][gc,phases   ] GC(0)   Evacuate Collection Set: 2,3ms
+[2023-01-26T09:36:36.029+0100][gc,phases   ] GC(0)   Post Evacuate Collection Set: 0,5ms
+[2023-01-26T09:36:36.029+0100][gc,phases   ] GC(0)   Other: 0,6ms
+[2023-01-26T09:36:36.029+0100][gc,heap     ] GC(0) Eden regions: 25->0(21)
+[2023-01-26T09:36:36.029+0100][gc,heap     ] GC(0) Survivor regions: 0->4(4)
+[2023-01-26T09:36:36.029+0100][gc,heap     ] GC(0) Old regions: 0->4
+[2023-01-26T09:36:36.029+0100][gc,heap     ] GC(0) Archive regions: 2->2
+[2023-01-26T09:36:36.029+0100][gc,heap     ] GC(0) Humongous regions: 0->0
+[2023-01-26T09:36:36.029+0100][gc,metaspace] GC(0) Metaspace: 7915K(8064K)->7915K(8064K) NonClass: 7028K(7104K)->7028K(7104K) Class: 886K(960K)->886K(960K)
+[2023-01-26T09:36:36.029+0100][gc          ] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 25M->8M(512M) 3,549ms
+[2023-01-26T09:36:36.029+0100][gc,cpu      ] GC(0) User=0,01s Sys=0,00s Real=0,00s
+[2023-01-26T14:38:53.999+0100][gc,start    ] GC(1) Pause Young (Normal) (G1 Evacuation Pause)
+[2023-01-26T14:38:54.008+0100][gc,task     ] GC(1) Using 8 workers of 8 for evacuation
+[2023-01-26T14:38:54.015+0100][gc,phases   ] GC(1)   Pre Evacuate Collection Set: 0,3ms
+[2023-01-26T14:38:54.015+0100][gc,phases   ] GC(1)   Merge Heap Roots: 0,1ms
+[2023-01-26T14:38:54.015+0100][gc,phases   ] GC(1)   Evacuate Collection Set: 6,3ms
+[2023-01-26T14:38:54.015+0100][gc,phases   ] GC(1)   Post Evacuate Collection Set: 0,8ms
+[2023-01-26T14:38:54.015+0100][gc,phases   ] GC(1)   Other: 8,6ms
+[2023-01-26T14:38:54.015+0100][gc,heap     ] GC(1) Eden regions: 21->0(24)
+[2023-01-26T14:38:54.015+0100][gc,heap     ] GC(1) Survivor regions: 4->1(4)
+[2023-01-26T14:38:54.015+0100][gc,heap     ] GC(1) Old regions: 4->8
+[2023-01-26T14:38:54.015+0100][gc,heap     ] GC(1) Archive regions: 2->2
+[2023-01-26T14:38:54.015+0100][gc,heap     ] GC(1) Humongous regions: 0->0
+[2023-01-26T14:38:54.015+0100][gc,metaspace] GC(1) Metaspace: 8728K(8960K)->8728K(8960K) NonClass: 7810K(7936K)->7810K(7936K) Class: 917K(1024K)->917K(1024K)
+[2023-01-26T14:38:54.016+0100][gc          ] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 29M->8M(512M) 16,288ms
+[2023-01-26T14:38:54.016+0100][gc,cpu      ] GC(1) User=0,04s Sys=0,00s Real=0,01s
