@@ -1,7 +1,0 @@
-FROM openjdk:17-bullseye
-COPY . /app
-WORKDIR /app
-COPY target/kafka-practice3*.jar /app/
-CMD java -jar *.jar
-
-# how to start services??
