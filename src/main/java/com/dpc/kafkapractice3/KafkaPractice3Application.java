@@ -17,12 +17,7 @@ public class KafkaPractice3Application {
     @Bean
     CommandLineRunner commandLineRunner(KafkaTemplate<String, Greeting> kafkaTemplate) {
         return args -> {
-//            for (int i = 0; i < 100; i++) {
-//                kafkaTemplate.send("random-topic-1", "hello there from kafka producer! " + i );
-//            }
-
             kafkaTemplate.send("random-topic-1", new Greeting("Hello", "World"));
-            kafkaTemplate.send("random-topic-1", new Greeting("hi again", "it is me"));
             kafkaTemplate.send("random-topic-1", new Greeting("hi again", "it is me"));
             kafkaTemplate.send("random-topic-1", new Greeting("ciao", "it is me"));
         };

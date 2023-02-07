@@ -26,13 +26,4 @@ public class KafkaListeners {
         LOGGER.info("This is a greeting: {}", greeting);
         LOGGER.info("-------------------------------------");
     }
-
-//    @KafkaListener(
-//            topics = "multiTypeTopic"
-//    )
-//    public void multiTypeListener(Object object) {
-//        LOGGER.info("-----------.----.------.----------");
-//        LOGGER.info("This is a multiTypeMessage: {}", object.toString());
-//        LOGGER.info("-----------.----.------.----------");
-//    }
 }
