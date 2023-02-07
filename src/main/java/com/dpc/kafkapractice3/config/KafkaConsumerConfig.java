@@ -18,13 +18,8 @@ import java.util.Map;
 @Configuration
 @EnableKafka
 public class KafkaConsumerConfig {
-    // @EnableKafka annotation is required on the configuration class to enable the detection of @KafkaListeners annotation on spring-managed beans
-
     @Value("${spring.kafka.bootstrap-servers}")
     private String bootstrapAddress;
-
-    // 1. For consuming messages we need to configure a ConsumerFactory and a KafkaListenerFactory
-
     @Bean
     public ConsumerFactory<String, Greeting> greetingConsumerFactory() {
         Map<String, Object> props = new HashMap<>();
@@ -34,11 +29,8 @@ public class KafkaConsumerConfig {
         props.put(ConsumerConfig.GROUP_ID_CONFIG, "consumer1");
 
         return new DefaultKafkaConsumerFactory<>(
-                // configs
                 props,
-                // key deserializer
                 new StringDeserializer(),
-                // value deserializer
                 new JsonDeserializer<>(Greeting.class)
         );
     }
