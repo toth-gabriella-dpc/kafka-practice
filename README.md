@@ -1,13 +1,25 @@
-# kafka-practice
+# Kafka practice application
 
-This project contains files with Kafka practice files with Docker config.
+## How to start this project - in local environment
 
-To be able to start this project, you need to run the following commands first in 2 seperate terminal windows:
+1. Open terminal
+2. Create .jar file with the following command.
 
-`cd kafka_2.13-3.3.1`
 
-`bin/zookeeper-server-start.sh config/zookeeper.properties`
+    mvn install -Dmaven.test.skip=true
 
-`cd kafka_2.13-3.3.1`
+In this "docker-based" scenario, it is important to skip tests.
 
-`bin/kafka-server-start.sh config/server.properties`
+3. Compose the docker file. This will start the Kafka and Zookeeper microservices and the application as well. The application will run based on the **Dockerfile**. (This is the reason, why the maven package was needed to be created.)
+
+
+    docker compose up
+
+
+---
+
+## Project reference
+
+[Source](https://docs.spring.io/spring-kafka/reference/html/#kafka)
+
+
