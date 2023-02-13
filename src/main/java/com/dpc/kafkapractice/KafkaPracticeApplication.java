@@ -1,17 +1,19 @@
-package com.dpc.kafkapractice3;
+package com.dpc.kafkapractice;
 
-import com.dpc.kafkapractice3.entity.Greeting;
+import com.dpc.kafkapractice.model.Greeting;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.kafka.annotation.EnableKafka;
 import org.springframework.kafka.core.KafkaTemplate;
 
 @SpringBootApplication
-public class KafkaPractice3Application {
+@EnableKafka
+public class KafkaPracticeApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(KafkaPractice3Application.class, args);
+        SpringApplication.run(KafkaPracticeApplication.class, args);
     }
 
     @Bean

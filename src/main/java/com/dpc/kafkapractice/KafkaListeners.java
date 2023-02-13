@@ -1,6 +1,5 @@
-package com.dpc.kafkapractice3;
+package com.dpc.kafkapractice;
 
-import com.dpc.kafkapractice3.entity.Greeting;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaListener;

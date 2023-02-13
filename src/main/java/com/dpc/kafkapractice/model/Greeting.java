@@ -1,4 +1,4 @@
-package com.dpc.kafkapractice3.entity;
+package com.dpc.kafkapractice.model;
 
 import lombok.*;
 

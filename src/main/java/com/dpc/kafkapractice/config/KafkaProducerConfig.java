@@ -1,6 +1,6 @@
-package com.dpc.kafkapractice3.config;
+package com.dpc.kafkapractice.config;
 
-import com.dpc.kafkapractice3.entity.Greeting;
+import com.dpc.kafkapractice.model.Greeting;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Value;
